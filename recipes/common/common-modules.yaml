@@ -7,10 +7,14 @@ modules:
 
   - type: rpm-ostree
     repos:
-       # nerd-fonts fallback
-       - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
-       # Brave browser
-       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+      # nerd-fonts fallback
+      - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
+      # Brave browser
+      - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+      # Tailscale
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      # Docker repo
+      - https://download.docker.com/linux/fedora/docker-ce.repo
     keys:
       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
@@ -44,6 +48,14 @@ modules:
       - openssh-askpass
       - wireguard-tools
       - fzf
+      # Tailscale
+      - tailscale
+      # Docker
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
       # user tools
       - neovim
       - kitty
