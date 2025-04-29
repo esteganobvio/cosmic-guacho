@@ -1,5 +1,5 @@
 ---
-name: cosmic-guacho
+name: cosmic-guacho-nvidia
 description: Cosmic Guacho image
 base-image: ghcr.io/ublue-os/cosmic-atomic-nvidia
 image-version: 42
