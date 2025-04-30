@@ -48,6 +48,8 @@ modules:
       - openssh-askpass
       - wireguard-tools
       - fzf
+      - tuned
+      - tuned-ppd
       # Tailscale
       - tailscale
       # Docker
@@ -73,6 +75,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+      - power-profiles-daemon
     optfix:
       - brave.com
 
